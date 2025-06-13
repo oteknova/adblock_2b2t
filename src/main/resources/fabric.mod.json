@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "adblock_2b2t",
+  "version": "${version}",
+  "name": "2b2t AdBlock",
+  "description": "Filters chat messages on the 2b2t Minecraft server to block advertisements and spam. Supports both remote and local filter lists with multiple categories.",
+  "authors": ["n00bs"],
+  "contact": {
+    "homepage": "https://github.com/n00bs/adblock_2b2t",
+    "issues": "https://github.com/n00bs/adblock_2b2t/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "info.n00bs.adblock_2b2t.client.Adblock_2b2tClient"
+    ],
+    "main": [
+      "info.n00bs.adblock_2b2t.Adblock_2b2t"
+    ]
+  },
+  "mixins": [
+    "adblock_2b2t.mixins.json",
+    {
+      "config": "adblock_2b2t.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

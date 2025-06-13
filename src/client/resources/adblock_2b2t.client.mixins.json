@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "info.n00bs.adblock_2b2t.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatMessageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
